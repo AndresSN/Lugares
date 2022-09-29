@@ -1,4 +1,4 @@
-mpackage com.example.lugares
+package com.example.lugares
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
