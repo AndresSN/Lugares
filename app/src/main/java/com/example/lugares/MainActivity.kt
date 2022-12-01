@@ -46,13 +46,13 @@ class MainActivity : AppCompatActivity() {
         auth.createUserWithEmailAndPassword(email,clave).addOnCompleteListener(this){
             task ->
             if (task.isSuccessful){
-                Log.d("Creando Usuario", "Registrado")
+                Log.d("Creando Usuario", "Registrado...")
                 val user = auth.currentUser
                 if (user !=null){
                     actualiza(user)
                 }
             }else{
-                Log.d("Creando Usuario", "Fallo")
+                Log.d("Creando Usuario", "Fallo la creacion de usuario")
                 Toast.makeText(baseContext, "Fallo", Toast.LENGTH_LONG).show()
                 //actualiza(null)
             }
